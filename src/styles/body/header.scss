@@ -1,0 +1,189 @@
+.header {
+    // background-color: rgba(0, 0, 0, 0.4);
+    background-color: #bdbdc2;
+    box-shadow: 3px 3px 10px 3px rgba(0, 0, 0, 0.1);
+    height: 60px;
+    width: 107.9%;
+    display: flex;
+    position: relative;
+    left: -41px;
+
+    // .AppName {
+    //     margin-left: 20px;
+    //     line-height: 50px;
+    //     font-family: "Ariel Signature";
+    //     font-size: 23px;
+    //     font-weight: 600;
+    //     // color: linear-gradient(0, #ff0000, #b3ff00);
+    //     color: #292828;
+    // }
+
+    .search {
+        position: absolute;
+        top: 15px;
+        right: 330px;
+        width: 500px;
+        border-radius: 20px;
+        background-color: #f0f0f0;
+
+        .submit {
+            background-color: #f0f0f0;
+            padding: 0 15px 0 15px;
+            border: 0;
+            height: 35px;
+            width: 30px;
+            border-radius: 20px 0px 0px 20px;
+        }
+
+        .input_search {
+            background-color: #f0f0f0;
+            padding-left: 15px;
+            border: 0;
+            height: 35px;
+            border-radius: 0px 20px 20px 0px;
+            width: 70%;
+        }
+
+        input:focus {
+            outline: none;
+        }
+
+    }
+
+    .data_search {
+        position: absolute;
+        top: 55px;
+        left: 275px;
+        padding-left: 10px;
+        border-radius: 10px;
+        background-color: #f0f0f0;
+        width: 500px;
+        z-index: 2;
+        max-height: 250px;
+        overflow-y: auto;
+
+        .search_item {
+            margin-top: 5px;
+            font-weight: 500;
+            font-size: 15px;
+            cursor: pointer;
+
+            #AiOutlineSearch {
+                font-size: 18px;
+            }
+
+            #search_item_deadline {
+                margin-left: 15px;
+            }
+
+            #search_item_task_name {
+                margin-left: 20px;
+            }
+        }
+    }
+
+    .AiFillBell {
+        font-size: 30px;
+        margin-right: 40px;
+        position: absolute;
+        right: 100px;
+        top: 18px;
+        cursor: pointer;
+        color: #414141;
+    }
+
+    .avatar {
+        width: 35px;
+        height: 35px;
+        position: absolute;
+        right: 70px;
+        top: 15px;
+        cursor: pointer;
+    }
+
+    .logout {
+        background-color: #f0f0f0;
+        position: absolute;
+        top: 50px;
+        right: 65px;
+        border-radius: 10px;
+        width: 250px;
+        padding: 20px;
+        z-index: 2;
+
+        .logout_name {
+            padding-bottom: 10px;
+            border-bottom: 1px solid #9b9595;
+
+            .logout_avatar {
+                width: 30px;
+                height: 30px;
+            }
+
+            .logout_firstname {
+                margin-left: 20px;
+                font-size: 20px;
+                font-weight: 600;
+            }
+
+            .logout_lastname {
+                margin-left: 10px;
+                font-size: 20px;
+                font-weight: 600;
+            }
+        }
+
+        .logout_content {
+            margin-top: 10px;
+
+            .MdLogout {
+                font-size: 25px;
+                margin-right: 20px;
+                margin-left: 5px;
+                cursor: pointer;
+            }
+
+            .logout_text {
+                font-size: 18px;
+                font-weight: 500;
+                cursor: pointer;
+            }
+        }
+
+        .header_help {
+            margin-top: 10px;
+
+            .header_MdHelp {
+                font-size: 27px;
+                margin-right: 20px;
+                margin-left: 5px;
+                color: #414141;
+                cursor: pointer;
+            }
+
+            .header_help_text {
+                font-size: 18px;
+                font-weight: 500;
+                cursor: pointer;
+            }
+        }
+
+        .header_setting {
+            margin-top: 10px;
+
+            .header_AiFillSetting {
+                font-size: 27px;
+                margin-right: 20px;
+                margin-left: 5px;
+                color: #414141;
+                cursor: pointer;
+            }
+
+            .header_setting_text {
+                font-size: 18px;
+                font-weight: 500;
+                cursor: pointer;
+            }
+        }
+    }
+}

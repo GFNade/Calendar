@@ -1,0 +1,52 @@
+.titlecontainer {
+    background-color: #39e5fc;
+    // background-color: #FFC1C1;
+    height: 10vh;
+    width: 100%;
+    margin-top: 10px;
+    padding-left: 20px;
+    padding-top: 10px;
+    border-radius: 5px 5px 0 0;
+    box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.25);
+
+    .title {
+        display: inline;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 30px;
+        color: #363431;
+        // color: #FFF;
+    }
+
+    .date_today {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 17px;
+        color: #636472;
+        // color: #FFF;
+
+    }
+
+    .bt_addtask {
+        position: absolute;
+        background-color: #3b85f5;
+        top: 20px;
+        right: -20px;
+        margin: 3vh 10% 0 0;
+        padding: 1.5vh 2.5vh;
+        border-radius: 25px;
+        border: 0;
+        float: right;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 19px;
+        color: #f7f7f7;
+        z-index: 2;
+    }
+}

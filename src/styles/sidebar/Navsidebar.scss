@@ -1,0 +1,299 @@
+// $iconColor: #363431;
+
+%titleStyle {
+    font-family: 'Space Grotesk', Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 33px;
+    color: rgba(255, 255, 255, 1);
+}
+
+%configStyle {
+    display: none;
+    font-size: 20px;
+    color: #f01912;
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+
+.Navsidebar {
+    border: 1px solid #cccccc;
+    // background-color: #f7f7f7;
+    background-image: linear-gradient(0, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../../assets/bg1.png");
+    background-size: cover;
+    border: 0;
+
+    height: 100vh;
+    width: 19%;
+    padding: 20px;
+    padding-top: 5px;
+
+    ::-webkit-scrollbar {
+        width: 8px;
+        background-color: #383838;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background-color: rgba(255, 255, 255, 1);
+        border-radius: 5px;
+    }
+
+    .nav_logo {
+        text-align: center;
+
+        .sidebar_logo {
+            width: 50%;
+            height: 100px;
+            // margin-left: 10px;
+        }
+
+        // padding-bottom: 10px;
+        // border-bottom: 1px solid #cccccc;
+    }
+
+    .nav_favourite {
+        // background-color: #00acc1;
+        margin-top: 10px;
+        height: 50px;
+        line-height: 50px;
+        border-radius: 5px;
+
+        .icon_favourite {
+            font-size: 24px;
+            margin-top: -3px;
+            margin-left: 15px;
+            color: rgba(255, 255, 255, 1);
+        }
+
+        .navfavourite {
+            margin-left: 15px;
+            @extend %titleStyle;
+            text-decoration: none;
+        }
+    }
+
+    .nav_workspace {
+        margin-top: 5px;
+        // border-top: 2px solid #DAD9D9;
+        // border-bottom: 2px solid #DAD9D9;
+
+        .workspaceTitle {
+            // background-color: #00acc1;
+            border-radius: 4px;
+            height: 40px;
+            line-height: 40px;
+
+            .BsPersonWorkspace {
+                font-size: 20px;
+                margin-top: -3px;
+                margin-left: 15px;
+                color: rgba(255, 255, 255, 1);
+            }
+
+            .workspace_title {
+                margin-left: 15px;
+                @extend %titleStyle;
+            }
+
+            .AiOutlinePlus {
+                float: right;
+                margin-right: 10px;
+                margin-top: 9px;
+                cursor: pointer;
+                font-size: 23px;
+                color: rgba(255, 255, 255, 1);
+            }
+        }
+
+        .TiDeleteOutline {
+            float: right;
+            cursor: pointer;
+            font-size: 18px;
+            font-weight: 600;
+            color: rgba(255, 255, 255, 1);
+            margin-right: 15px;
+            margin-top: 5px;
+        }
+
+        .workspace_list {
+            max-height: 150px;
+            overflow-y: auto;
+            // background-color: aqua;
+            margin-left: 30px;
+            margin-right: 15px;
+
+            .workspace_item {
+                margin: 5px 0 5px 0;
+
+                .icon {
+                    margin-left: 15px;
+                    font-size: 18px;
+                    color: rgba(255, 255, 255, 1);
+                }
+
+                .nav_workspace_item {
+                    margin-left: 15px;
+                    text-decoration: none;
+                    @extend %titleStyle;
+                    font-size: 13px;
+                    line-height: 20px;
+                }
+
+            }
+        }
+    }
+
+    .nav_calendar {
+        // background-color: #00acc1;
+        margin-top: 5px;
+        height: 50px;
+        line-height: 50px;
+        border-radius: 5px;
+
+        .AiFillCalendar {
+            font-size: 21px;
+            margin-top: -3px;
+            margin-left: 15px;
+            color: rgba(255, 255, 255, 1);
+        }
+
+        .navcalendar {
+            @extend %titleStyle;
+            text-decoration: none;
+            margin-left: 15px;
+        }
+    }
+
+    .nav_mylife {
+        // background-color: #00acc1;
+        margin-top: 5px;
+        height: 50px;
+        line-height: 50px;
+        border-radius: 5px;
+
+        .AiFillClockCircle {
+            font-size: 21px;
+            margin-top: -3px;
+            margin-left: 15px;
+            color: rgba(255, 255, 255, 1);
+        }
+
+        .navmylife {
+            @extend %titleStyle;
+            text-decoration: none;
+            margin-left: 15px;
+        }
+    }
+
+    .nav_favourite:has(.navfavourite.active) {
+        background-color: #00acc1;
+    }
+
+    .nav_calendar:has(.navcalendar.active) {
+        background-color: #00acc1;
+    }
+
+    .nav_mylife:has(.navmylife.active) {
+        background-color: #00acc1;
+    }
+
+    .nav_workspace:has(.nav_workspace_item.active) .workspaceTitle {
+        background-color: #00acc1;
+    }
+
+}
+
+//form add workspace
+%inputStyle {
+    display: block;
+    width: 90%;
+    margin: 0px auto;
+    margin-top: 10px;
+    border-radius: 5px;
+    height: 40px;
+    padding: 0 10px 0 10px;
+    text-align: center;
+    font-family: 'Space Grotesk', Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 19px;
+}
+
+.formaddworkspace {
+    top: 30px;
+    width: 350px;
+    margin-left: 500px;
+    border-radius: 5px;
+
+    .addworkspace_header {
+        background-color: rgb(0, 45, 192);
+
+        #formaddworkspace_header {
+            color: white;
+            font-family: 'Space Grotesk', Helvetica, Arial, sans-serif;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 23px;
+            margin: auto;
+        }
+    }
+
+    .addworkspace_body {
+        background-color: #ccc;
+
+        .input_sub_pro {
+            margin-top: 15px;
+            @extend %inputStyle;
+            box-shadow: 3px 3px 5px 2px rgba(0, 0, 0, 0.3);
+        }
+
+        #sub_pro {
+            @extend %inputStyle;
+            cursor: pointer;
+            width: 80%;
+
+            .subject {
+                font-weight: 550;
+                font-size: 16px;
+                border: 1px solid rgb(105, 101, 101);
+                background-color: rgb(235, 234, 234);
+                box-shadow: 3px 3px 5px 2px rgba(0, 0, 0, 0.3);
+            }
+
+            .project {
+                margin-top: 3px;
+                font-weight: 550;
+                font-size: 16px;
+                border: 1px solid rgb(105, 101, 101);
+                background-color: rgb(235, 234, 234);
+                box-shadow: 3px 3px 5px 2px rgba(0, 0, 0, 0.3);
+            }
+
+        }
+
+        .input_workspace_name {
+            @extend %inputStyle;
+            margin-top: 30px;
+            box-shadow: 3px 3px 5px 2px rgba(0, 0, 0, 0.3);
+        }
+
+    }
+
+    .addworkspace_footer {
+        background-color: #bdbcbc;
+        border: 0;
+
+        .addworkspace_add {
+            width: 80px;
+            margin-right: 70px;
+        }
+
+        .addworkspacr_close {
+            width: 80px;
+            margin-right: 40px;
+        }
+    }
+
+}

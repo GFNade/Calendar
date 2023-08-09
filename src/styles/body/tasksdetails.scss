@@ -1,0 +1,558 @@
+#taskdetail {
+    top: -20px;
+
+    #taskdetail_header {
+        background-color: #1ef3f3;
+        border: 0;
+        padding: 0;
+        height: 100px;
+        align-items: normal;
+
+        .btn-close {
+            margin-right: 30px;
+            // padding: 0;
+            font-size: 20px;
+            margin-top: 20px;
+        }
+
+        #taskdetail_title {
+            margin-left: 60px;
+            margin-top: 10px;
+            color: var(--primary-text, #363431);
+            font-size: 35px;
+            font-family: Inter;
+            font-weight: 600;
+        }
+
+        .position {
+            position: absolute;
+            right: 100px;
+            top: 22px;
+            font-size: 19px;
+            font-family: Inter;
+            font-weight: 600;
+            background-color: rgb(156, 147, 233);
+            border-radius: 5px;
+            height: 28px;
+            line-height: 28px;
+            width: 100px;
+            text-align: center;
+            color: #424141;
+        }
+
+        #AiOutlineStar {
+            position: absolute;
+            color: rgb(255, 251, 0);
+            font-size: 35px;
+            right: 230px;
+            top: 20px;
+        }
+
+        #AiFillStar {
+            position: absolute;
+            top: 20px;
+            color: rgb(255, 251, 0);
+            font-size: 35px;
+            right: 230px;
+        }
+
+        .taskdetail_status {
+            font-size: 16px;
+            font-family: Inter;
+            font-weight: 550;
+            position: absolute;
+            left: 0;
+            top: 65px;
+            width: 100%;
+            text-align: center;
+
+            .detail_text {
+                color: #ced4da;
+                width: 110px;
+                border: 1px solid #ced4da;
+                border-radius: 5px;
+                text-align: center;
+                cursor: pointer;
+            }
+
+            #detail_text1 {
+                margin-right: 50px;
+                display: inline-block;
+                background-color: #FFFFFF;
+            }
+
+
+            #detail_text2 {
+                margin-right: 50px;
+                display: inline-block;
+                background-color: #FFFFFF;
+            }
+
+            #detail_text3 {
+                display: inline-block;
+                background-color: #FFFFFF;
+            }
+        }
+    }
+
+    #taskdetail_body {
+        background-color: rgb(255, 255, 255);
+
+        .taskdetail_data {
+            text-align: center;
+
+            ::-webkit-scrollbar {
+                width: 7px;
+                background-color: #ffffff;
+            }
+
+            ::-webkit-scrollbar-thumb {
+                background-color: rgb(165, 164, 164);
+                border-radius: 5px;
+            }
+
+            #taskdetail_input_task_name {
+                border-radius: 5px;
+                width: 95%;
+                max-height: 40px;
+                border: 0;
+                text-align: center;
+                font-size: 22px;
+                font-family: 'Space Grotesk', Helvetica, Arial, sans-serif;
+                font-weight: 550;
+                background-color: #FFFFFF;
+                color: #363431;
+            }
+
+            #taskdetail_input_description {
+                border-radius: 5px;
+                width: 95%;
+                max-height: 100px;
+                margin: 0;
+                border: 0;
+                text-align: center;
+                font-size: 18px;
+                font-family: 'Space Grotesk', Helvetica, Arial, sans-serif;
+                font-weight: 500;
+                background-color: #FFFFFF;
+                color: #202020;
+            }
+
+            .team {
+                text-align: left;
+                padding-left: 15px;
+
+                .file {
+                    background-color: #ededee;
+                    margin-bottom: 5px;
+                    width: 95%;
+
+                    .AiFillFileExclamation {
+                        font-size: 18px;
+                    }
+
+                    .text_item {
+                        font-family: 'Space Grotesk', Helvetica, Arial, sans-serif;
+                        font-size: 16px;
+                        font-weight: 500;
+                        margin-left: 20px;
+                    }
+
+                    .TiDeleteOutline {
+                        float: right;
+                        margin-right: 20px;
+                        font-size: 19px;
+                        margin-top: 3px;
+                    }
+                }
+
+                .inputfile {
+                    font-size: 14px;
+                    // height: 20px;
+                    // line-height: 20px;
+                    font-family: 'Space Grotesk', Helvetica, Arial, sans-serif;
+                }
+
+                .ImCheckmark_file {
+                    float: right;
+                    margin-right: 45px;
+                    margin-top: 3px;
+                    color: #00ff00;
+                    font-size: 18px;
+                }
+
+                .leader_data {
+                    display: block;
+                    margin-top: 5px;
+
+                    .leader {
+                        font-family: 'Space Grotesk', Helvetica, Arial, sans-serif;
+                        font-size: 16px;
+                        font-weight: 550;
+                        margin-right: 20px;
+                    }
+
+                    .avatar_leader {
+                        margin-left: -5px;
+                    }
+
+                    .avatar_name_leader {
+                        font-family: 'Space Grotesk', Helvetica, Arial, sans-serif;
+                        font-size: 14px;
+                        font-weight: 500;
+                        margin-left: 10px;
+                        cursor: pointer;
+                    }
+                }
+
+                .performer_data {
+                    display: block;
+                    margin-top: 5px;
+
+                    .performer {
+                        font-family: 'Space Grotesk', Helvetica, Arial, sans-serif;
+                        font-size: 16px;
+                        font-weight: 550;
+                        margin-right: 20px;
+                    }
+
+                    .avatar_performer {
+                        margin-left: -5px;
+                    }
+
+                    .avatar_name_performer {
+                        font-family: 'Space Grotesk', Helvetica, Arial, sans-serif;
+                        font-size: 14px;
+                        font-weight: 500;
+                        margin-left: 10px;
+                        cursor: pointer;
+                    }
+
+                    .AiFillPlusCircle_performer {
+                        float: right;
+                        margin-right: 40px;
+                        font-size: 17px;
+                        color: #333333;
+                        margin-top: 3px;
+                    }
+
+                    #addperformer {
+                        width: 300px;
+                        margin-left: 10px;
+                        padding-left: 10px;
+                    }
+
+                    #ImCheckmark_performer {
+                        float: right;
+                        margin-right: 38px;
+                        color: #09ff00;
+                        font-size: 20px;
+                    }
+
+                }
+
+                .support_data {
+                    display: block;
+                    margin-top: 5px;
+
+                    .support {
+                        font-family: 'Space Grotesk', Helvetica, Arial, sans-serif;
+                        font-size: 16px;
+                        font-weight: 550;
+                        margin-right: 20px;
+                        ;
+                    }
+
+                    .avatar_support {
+                        margin-left: -5px;
+                    }
+
+                    .avatar_name_support {
+                        font-family: 'Space Grotesk', Helvetica, Arial, sans-serif;
+                        font-size: 14px;
+                        font-weight: 500;
+                        margin-left: 10px;
+                        cursor: pointer;
+                    }
+
+                    .AiFillPlusCircle_support {
+                        float: right;
+                        margin-right: 40px;
+                        font-size: 17px;
+                        color: #333333;
+                        margin-top: 3px;
+                    }
+
+                    #addsupport {
+                        width: 300px;
+                        margin-left: 10px;
+                        padding-left: 10px;
+                    }
+
+                    #ImCheckmark_support {
+                        float: right;
+                        margin-right: 38px;
+                        color: #09ff00;
+                        font-size: 20px;
+                    }
+                }
+
+                .evaluate_data {
+                    display: block;
+                    margin-top: 5px;
+
+                    .evaluate {
+                        font-family: 'Space Grotesk', Helvetica, Arial, sans-serif;
+                        font-size: 16px;
+                        font-weight: 550;
+                        margin-right: 20px;
+                    }
+
+                    .avatar_evaluate {
+                        margin-left: -5px;
+                    }
+
+                    .avatar_name_evaluate {
+                        font-family: 'Space Grotesk', Helvetica, Arial, sans-serif;
+                        font-size: 14px;
+                        font-weight: 500;
+                        margin-left: 10px;
+                        cursor: pointer;
+                    }
+
+                    .AiFillPlusCircle_evaluate {
+                        float: right;
+                        margin-right: 40px;
+                        font-size: 17px;
+                        color: #333333;
+                        margin-top: 3px;
+                    }
+
+                    #addevaluate {
+                        width: 300px;
+                        margin-left: 10px;
+                        padding-left: 10px;
+                    }
+
+                    #ImCheckmark_evaluate {
+                        float: right;
+                        margin-right: 38px;
+                        color: #09ff00;
+                        font-size: 20px;
+                    }
+                }
+
+                .comment {
+                    margin-top: 5px;
+                    width: 95%;
+                    padding: 5px;
+                }
+
+                .Add_Performer,
+                .Add_Support,
+                .Add_Evaluate {
+                    font-family: 'Space Grotesk', Helvetica, Arial, sans-serif;
+                    font-size: 16px;
+                    font-weight: 550;
+                    margin-right: 20px;
+                }
+            }
+
+            #deadline_text {
+                font-size: 20px;
+                font-family: Inter;
+                font-weight: 600;
+                color: rgb(233, 53, 53);
+            }
+
+            #deadline_date {
+                padding-left: 15px;
+                font-size: 20px;
+                font-family: Inter;
+                font-weight: 600;
+                color: rgb(233, 53, 53);
+            }
+
+            #taskdetail_input_deadline {
+                display: none;
+                border-radius: 5px;
+                width: 50%;
+                border: 0;
+                text-align: center;
+                font-size: 20px;
+                font-family: Inter;
+                font-weight: 600;
+                color: rgb(233, 53, 53);
+            }
+        }
+
+    }
+
+    #taskdetail_footer {
+        background-color: #d3d3d3;
+
+        #taskdetail_footer_oke {
+            display: none;
+            position: absolute;
+            margin-right: 320px;
+            width: 100px;
+            background-color: rgb(33, 226, 43);
+            font-size: 19px;
+            font-weight: 600;
+            box-shadow: 3px 3px 5px 2px rgba(11, 0, 110, 0.25);
+            border: 0;
+        }
+
+        #taskdetail_footer_cancel {
+            display: none;
+            position: absolute;
+            margin-right: 180px;
+            width: 100px;
+            background-color: rgb(202, 199, 39);
+            font-size: 19px;
+            font-weight: 600;
+            text-align: center;
+            box-shadow: 3px 3px 5px 2px rgba(11, 0, 110, 0.25);
+            border: 0;
+        }
+
+        #taskdetail_footer_edit {
+            margin-right: 166px;
+            width: 100px;
+            background-color: rgb(202, 199, 39);
+            font-size: 19px;
+            font-weight: 600;
+            text-align: center;
+            box-shadow: 3px 3px 5px 2px rgba(11, 0, 110, 0.25);
+            border: 0;
+        }
+
+        #taskdetail_footer_delete {
+            margin-right: 50px;
+            width: 100px;
+            background-color: rgb(223, 45, 45);
+            font-size: 19px;
+            font-weight: 600;
+            text-align: center;
+            box-shadow: 3px 3px 5px 2px rgba(11, 0, 110, 0.25);
+            border: 0;
+        }
+    }
+}
+
+#modal_detail {
+    border-radius: 5px;
+    width: 350px;
+    border-radius: 5px;
+    text-align: center;
+
+
+    .file_modal_detail {
+        background-color: #a8a8a8;
+        margin-top: 5px;
+        padding-left: 5px;
+
+        .modal_detail_file_name {
+            font-family: 'Space Grotesk', Helvetica, Arial, sans-serif;
+            font-size: 16px;
+            font-weight: 550;
+            margin-left: 20px;
+        }
+
+        .modal_detail_AiFillFileExclamation {
+            font-size: 20px;
+        }
+    }
+
+    #modal_detail_header {
+        border: 0;
+        background-color: #cccccc;
+
+        .avatar_name {
+            margin-left: 30px;
+            position: absolute;
+            top: 3px;
+            font-size: 30px;
+            font-weight: 600;
+
+        }
+
+        .btn-close {
+            margin-top: -25px;
+            font-size: 18px;
+        }
+
+        .modal_detail_position {
+            position: absolute;
+            left: 75px;
+            top: 47px;
+            background-color: #4355f8;
+            width: 100px;
+            border-radius: 5px;
+            text-align: center;
+            font-family: 'Space Grotesk', Helvetica, Arial, sans-serif;
+            font-size: 16px;
+            font-weight: 500;
+            box-shadow: 3px 3px 5px 2px rgba(11, 0, 110, 0.25);
+            color: #FFF;
+        }
+
+        .modal_detail_status {
+            position: absolute;
+            top: 47px;
+            left: 200px;
+            border-radius: 5px;
+            width: 100px;
+            text-align: center;
+            font-family: 'Space Grotesk', Helvetica, Arial, sans-serif;
+            font-size: 16px;
+            font-weight: 500;
+            box-shadow: 3px 3px 5px 2px rgba(11, 0, 110, 0.25);
+            color: #FFF;
+        }
+    }
+
+    #modal_detail_body {
+        border: 0;
+        background-color: #cccccc;
+
+        .comment {
+            margin-top: 10px;
+            background-color: #dddbdb;
+            font-family: 'Space Grotesk', Helvetica, Arial, sans-serif;
+            font-size: 16px;
+            font-weight: 500;
+            padding: 5px;
+            width: 100%;
+            border-radius: 5px;
+            border: 1px solid #646363;
+            outline: none;
+            box-shadow: 3px 3px 5px 2px rgba(11, 0, 110, 0.25);
+        }
+
+        .modal_detail_AiOutlineStar {
+            font-size: 30px;
+            margin-left: 15px;
+        }
+
+        .modal_detail_AiFillStar {
+            font-size: 30px;
+            margin-left: 15px;
+        }
+    }
+
+    #modal_detail_footer {
+        background-color: #cccccc;
+        border: 0;
+
+        .modal_detail_close {
+            margin: auto;
+            width: 70px;
+            height: 33px;
+            background-color: #090088;
+            font-size: 18px;
+            padding: 0;
+            box-shadow: 3px 3px 5px 2px rgba(11, 0, 110, 0.35);
+        }
+    }
+}
